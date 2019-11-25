@@ -1,0 +1,15 @@
+x = 9
+Num = []
+mai=0
+for c in range(x):
+    Num.append(int(input(f'Digite o número para a posição {c}:')))
+    if c == 0:
+        mai = Num[c]
+    else:
+        if Num[c] > mai:
+            mai = Num[c]
+
+print(f'O maior valor digitado foi {mai} nas posições  ', end='')
+for i, v in enumerate(Num):
+    if v== mai:
+        print(f'{i}...', end='')

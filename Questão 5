@@ -1,0 +1,8 @@
+x = 10
+Num = []
+for c in range(x):
+    Num.append(int(input('Digite o número:')))
+Num.sort()
+print(f'Crescente {Num}')
+Num.reverse()
+print(f'Decrescente {Num}')

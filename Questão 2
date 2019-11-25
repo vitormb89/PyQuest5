@@ -1,0 +1,17 @@
+x = 100
+matrícula = []
+Salb = []
+desc = []
+Sal = []
+for c in range(x):
+    matrícula.append(int(input('Matrícula:')))
+    Salb.append(float(input('Salário Bruto:')))
+    desc.append((Salb[c] * 11) / 100)
+    Sal.append(Salb[c] - desc[c])
+
+print('-=' * 30)
+print('Lista de empregados, descontos no salário e salário liquido')
+print('-=' * 30)
+
+for c in range(x):
+    print(f'Matrícula:{matrícula[c]}   Salário Bruto:{Salb[c]}    Desconto:{desc[c]}    Salário Liquido:{Sal[c]}')
